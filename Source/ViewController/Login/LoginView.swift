@@ -12,7 +12,7 @@ import UIKit
 class LoginView: UIView {
     // MARK: Visual Elements
     
-    let titleLabel = LabelDefaut(text: "Login")
+    let titleLabel = LabelDefaut(text: "Login", font: UIFont.systemFont(ofSize: 25, weight: .semibold))
     let emailLabel = LabelDefaut(text: "Email")
     
     let emailTextField:UITextField = {
