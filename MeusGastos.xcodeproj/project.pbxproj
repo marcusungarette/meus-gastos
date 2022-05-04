@@ -9,13 +9,15 @@
 /* Begin PBXBuildFile section */
 		7931AF1E28208E0B00D70F36 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7931AF1D28208E0B00D70F36 /* AppDelegate.swift */; };
 		7931AF2028208E0B00D70F36 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7931AF1F28208E0B00D70F36 /* SceneDelegate.swift */; };
-		7931AF2228208E0B00D70F36 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7931AF2128208E0B00D70F36 /* ViewController.swift */; };
-		7931AF2528208E0B00D70F36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7931AF2328208E0B00D70F36 /* Main.storyboard */; };
 		7931AF2728208E1000D70F36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7931AF2628208E1000D70F36 /* Assets.xcassets */; };
 		7931AF2A28208E1000D70F36 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7931AF2828208E1000D70F36 /* LaunchScreen.storyboard */; };
 		7931AF3528208E1000D70F36 /* MeusGastosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7931AF3428208E1000D70F36 /* MeusGastosTests.swift */; };
 		7931AF3F28208E1100D70F36 /* MeusGastosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7931AF3E28208E1100D70F36 /* MeusGastosUITests.swift */; };
 		7931AF4128208E1100D70F36 /* MeusGastosUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7931AF4028208E1100D70F36 /* MeusGastosUITestsLaunchTests.swift */; };
+		7931AF512820956500D70F36 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7931AF502820956500D70F36 /* Coordinator.swift */; };
+		7931AF53282095FB00D70F36 /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7931AF52282095FB00D70F36 /* LoginCoordinator.swift */; };
+		7931AF562820972100D70F36 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7931AF552820972100D70F36 /* LoginViewController.swift */; };
+		7931AF5828209A2500D70F36 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7931AF5728209A2500D70F36 /* LoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +41,6 @@
 		7931AF1A28208E0B00D70F36 /* MeusGastos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeusGastos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7931AF1D28208E0B00D70F36 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7931AF1F28208E0B00D70F36 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7931AF2128208E0B00D70F36 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		7931AF2428208E0B00D70F36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7931AF2628208E1000D70F36 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7931AF2928208E1000D70F36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7931AF2B28208E1000D70F36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +49,10 @@
 		7931AF3A28208E1100D70F36 /* MeusGastosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeusGastosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7931AF3E28208E1100D70F36 /* MeusGastosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeusGastosUITests.swift; sourceTree = "<group>"; };
 		7931AF4028208E1100D70F36 /* MeusGastosUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeusGastosUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7931AF502820956500D70F36 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		7931AF52282095FB00D70F36 /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
+		7931AF552820972100D70F36 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		7931AF5728209A2500D70F36 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				7931AF1C28208E0B00D70F36 /* MeusGastos */,
+				7931AF4D2820952700D70F36 /* Source */,
 				7931AF3328208E1000D70F36 /* MeusGastosTests */,
 				7931AF3D28208E1100D70F36 /* MeusGastosUITests */,
 				7931AF1B28208E0B00D70F36 /* Products */,
@@ -101,8 +106,6 @@
 			children = (
 				7931AF1D28208E0B00D70F36 /* AppDelegate.swift */,
 				7931AF1F28208E0B00D70F36 /* SceneDelegate.swift */,
-				7931AF2128208E0B00D70F36 /* ViewController.swift */,
-				7931AF2328208E0B00D70F36 /* Main.storyboard */,
 				7931AF2628208E1000D70F36 /* Assets.xcassets */,
 				7931AF2828208E1000D70F36 /* LaunchScreen.storyboard */,
 				7931AF2B28208E1000D70F36 /* Info.plist */,
@@ -125,6 +128,41 @@
 				7931AF4028208E1100D70F36 /* MeusGastosUITestsLaunchTests.swift */,
 			);
 			path = MeusGastosUITests;
+			sourceTree = "<group>";
+		};
+		7931AF4D2820952700D70F36 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				7931AF4E2820953600D70F36 /* Coordinator */,
+				7931AF4F2820954000D70F36 /* ViewController */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		7931AF4E2820953600D70F36 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				7931AF502820956500D70F36 /* Coordinator.swift */,
+				7931AF52282095FB00D70F36 /* LoginCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		7931AF4F2820954000D70F36 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7931AF542820971100D70F36 /* Login */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		7931AF542820971100D70F36 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				7931AF552820972100D70F36 /* LoginViewController.swift */,
+				7931AF5728209A2500D70F36 /* LoginView.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,7 +271,6 @@
 			files = (
 				7931AF2A28208E1000D70F36 /* LaunchScreen.storyboard in Resources */,
 				7931AF2728208E1000D70F36 /* Assets.xcassets in Resources */,
-				7931AF2528208E0B00D70F36 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,8 +295,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7931AF2228208E0B00D70F36 /* ViewController.swift in Sources */,
+				7931AF5828209A2500D70F36 /* LoginView.swift in Sources */,
+				7931AF512820956500D70F36 /* Coordinator.swift in Sources */,
+				7931AF53282095FB00D70F36 /* LoginCoordinator.swift in Sources */,
 				7931AF1E28208E0B00D70F36 /* AppDelegate.swift in Sources */,
+				7931AF562820972100D70F36 /* LoginViewController.swift in Sources */,
 				7931AF2028208E0B00D70F36 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,14 +337,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		7931AF2328208E0B00D70F36 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7931AF2428208E0B00D70F36 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		7931AF2828208E1000D70F36 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -442,7 +474,6 @@
 				INFOPLIST_FILE = MeusGastos/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -470,7 +501,6 @@
 				INFOPLIST_FILE = MeusGastos/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
