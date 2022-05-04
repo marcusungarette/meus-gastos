@@ -12,32 +12,15 @@ import UIKit
 class LoginView: UIView {
     // MARK: Visual Elements
     
+    // MARK: LabelDefault
     let titleLabel = LabelDefaut(text: "Login", font: UIFont.systemFont(ofSize: 25, weight: .semibold))
     let emailLabel = LabelDefaut(text: "Email")
-    
-    let emailTextField:UITextField = {
-        let tf = UITextField()
-        tf.translatesAutoresizingMaskIntoConstraints = false
-        tf.layer.borderColor = UIColor.black.cgColor
-        tf.layer.borderWidth = 1
-        tf.backgroundColor = .lightGray
-        tf.placeholder = "Digite seu email"
-        
-        return tf
-    }()
-    
     let passwordLabel = LabelDefaut(text: "Senha")
     
-    let passwordTextField: UITextField = {
-        let tf = UITextField()
-        tf.translatesAutoresizingMaskIntoConstraints = false
-        tf.layer.borderColor = UIColor.black.cgColor
-        tf.layer.borderWidth = 1
-        tf.backgroundColor = .lightGray
-        tf.placeholder = "Digite uma senha"
-        
-        return tf
-    }()
+    
+    // MARK: TextFieldDefault
+    let emailTextField = TextFieldDefaut(placeholder: "Digite seu e-mail")
+    let passwordTextField = TextFieldDefaut(placeholder: "Digite sua senha")
     
     let loginButton: UIButton = {
         let bt = UIButton()
