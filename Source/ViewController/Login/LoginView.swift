@@ -12,22 +12,8 @@ import UIKit
 class LoginView: UIView {
     // MARK: Visual Elements
     
-    let titleLabel: UILabel = {
-        let lb = UILabel()
-        lb.text = "Login"
-        lb.translatesAutoresizingMaskIntoConstraints = false
-        lb.font = UIFont.systemFont(ofSize: 25, weight: .semibold)
-        
-        return lb
-    }()
-    
-    let emailLabel: UILabel = {
-        let lb = UILabel()
-        lb.text = "Email"
-        lb.translatesAutoresizingMaskIntoConstraints = false
-        
-        return lb
-    }()
+    let titleLabel = LabelDefaut(text: "Login")
+    let emailLabel = LabelDefaut(text: "Email")
     
     let emailTextField:UITextField = {
         let tf = UITextField()
@@ -40,13 +26,7 @@ class LoginView: UIView {
         return tf
     }()
     
-    let passwordLabel: UILabel = {
-        let lb = UILabel()
-        lb.text = "Senha"
-        lb.translatesAutoresizingMaskIntoConstraints = false
-       
-        return lb
-    }()
+    let passwordLabel = LabelDefaut(text: "Senha")
     
     let passwordTextField: UITextField = {
         let tf = UITextField()
@@ -86,7 +66,6 @@ class LoginView: UIView {
     // MARK: Initializers
     override init(frame: CGRect) {
         super.init(frame: frame)
-        
         setVisualElements()
     }
     
