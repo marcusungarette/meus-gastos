@@ -14,21 +14,22 @@ class TextFieldDefaut: UITextField {
     
     
     //MARK: Inits
-    init(placeholder: String) {
+    init(placeholder: String, keyboardType: UIKeyboardType = .default) {
         super.init(frame: .zero)
-        initDefault(placeholder: placeholder)
+        initDefault(placeholder: placeholder, keyboardType: keyboardType)
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    private func initDefault(placeholder: String) {
+    private func initDefault(placeholder: String, keyboardType: UIKeyboardType) {
         self.translatesAutoresizingMaskIntoConstraints = false
         self.layer.borderColor = UIColor.black.cgColor
         self.layer.borderWidth = 1
         self.backgroundColor = .lightGray
         self.placeholder = placeholder
+        self.keyboardType = keyboardType
     }
     
     //MARK: Add Padding in TextField
