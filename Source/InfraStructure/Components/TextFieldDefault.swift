@@ -20,10 +20,10 @@ class TextFieldDefaut: UITextField {
         self.keyboardType = keyboardType
     }
     
-    init(placeholder: String, isSecuteTextEntry: Bool) {
+    init(placeholder: String, isSecureTextEntry: Bool) {
         super.init(frame: .zero)
         initDefault(placeholder: placeholder)
-        self.isSecureTextEntry = isSecuteTextEntry
+        self.isSecureTextEntry = isSecureTextEntry
     }
     
     required init?(coder: NSCoder) {
