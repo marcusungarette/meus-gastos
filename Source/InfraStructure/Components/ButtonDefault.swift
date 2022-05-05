@@ -10,12 +10,7 @@ import UIKit
 
 class ButtonDefault: UIButton {
     
-    init(title: String) {
-        super.init(frame: .zero)
-        initDefault(title: title, backgroundColor: UIColor.systemBlue)
-    }
-    
-    init(title: String, backgroundColor: UIColor) {
+    init(title: String, backgroundColor: UIColor = .systemBlue) {
         super.init(frame: .zero)
         initDefault(title: title, backgroundColor: backgroundColor)
     }
