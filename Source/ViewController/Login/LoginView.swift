@@ -18,7 +18,7 @@ class LoginView: UIView {
     
     // MARK: TextFieldDefault
     let emailTextField = TextFieldDefaut(placeholder: "Digite seu e-mail", keyboardType: .emailAddress)
-    let passwordTextField = TextFieldDefaut(placeholder: "Digite sua senha")
+    let passwordTextField = TextFieldDefaut(placeholder: "Digite sua senha", isSecureTextEntry: true)
     
     // MARK: ButtonDefault
     let loginButton = ButtonDefault(title: "Entrar")

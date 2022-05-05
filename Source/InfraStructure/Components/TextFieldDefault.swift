@@ -16,20 +16,26 @@ class TextFieldDefaut: UITextField {
     //MARK: Inits
     init(placeholder: String, keyboardType: UIKeyboardType = .default) {
         super.init(frame: .zero)
-        initDefault(placeholder: placeholder, keyboardType: keyboardType)
+        initDefault(placeholder: placeholder)
+        self.keyboardType = keyboardType
+    }
+    
+    init(placeholder: String, isSecuteTextEntry: Bool) {
+        super.init(frame: .zero)
+        initDefault(placeholder: placeholder)
+        self.isSecureTextEntry = isSecuteTextEntry
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    private func initDefault(placeholder: String, keyboardType: UIKeyboardType) {
+    private func initDefault(placeholder: String) {
         self.translatesAutoresizingMaskIntoConstraints = false
         self.layer.borderColor = UIColor.black.cgColor
         self.layer.borderWidth = 1
         self.backgroundColor = .lightGray
         self.placeholder = placeholder
-        self.keyboardType = keyboardType
     }
     
     //MARK: Add Padding in TextField
