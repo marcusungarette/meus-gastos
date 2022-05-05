@@ -17,33 +17,13 @@ class LoginView: UIView {
     let emailLabel = LabelDefaut(text: "Email")
     let passwordLabel = LabelDefaut(text: "Senha")
     
-    
     // MARK: TextFieldDefault
     let emailTextField = TextFieldDefaut(placeholder: "Digite seu e-mail")
     let passwordTextField = TextFieldDefaut(placeholder: "Digite sua senha")
     
-    let loginButton: UIButton = {
-        let bt = UIButton()
-        
-        bt.translatesAutoresizingMaskIntoConstraints = false
-        bt.setTitle("Entrar", for: .normal)
-        bt.backgroundColor = .blue
-        bt.layer.cornerRadius = 15
-        
-        return bt
-    }()
-    
-    let registerButton: UIButton = {
-        let bt = UIButton()
-        
-        bt.translatesAutoresizingMaskIntoConstraints = false
-        bt.setTitle("Registrar-se", for: .normal)
-        bt.backgroundColor = .orange
-        bt.layer.cornerRadius = 15
-        
-        return bt
-    }()
-    
+    // MARK: ButtonDefault
+    let loginButton = ButtonDefault(title: "Entrar")
+    let registerButton = ButtonDefault(title: "Registrar", backgroundColor: UIColor.systemOrange)
     
     
     // MARK: Initializers

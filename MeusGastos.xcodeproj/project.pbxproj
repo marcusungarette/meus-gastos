@@ -20,6 +20,7 @@
 		7931AF5828209A2500D70F36 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7931AF5728209A2500D70F36 /* LoginView.swift */; };
 		799BC8DB2823410F0000E7AB /* LabelDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799BC8DA2823410F0000E7AB /* LabelDefault.swift */; };
 		799BC8DD2823464A0000E7AB /* TextFieldDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799BC8DC2823464A0000E7AB /* TextFieldDefault.swift */; };
+		799BC8DF28234AB50000E7AB /* ButtonDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799BC8DE28234AB50000E7AB /* ButtonDefault.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		7931AF5728209A2500D70F36 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		799BC8DA2823410F0000E7AB /* LabelDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelDefault.swift; sourceTree = "<group>"; };
 		799BC8DC2823464A0000E7AB /* TextFieldDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldDefault.swift; sourceTree = "<group>"; };
+		799BC8DE28234AB50000E7AB /* ButtonDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonDefault.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +185,7 @@
 			children = (
 				799BC8DA2823410F0000E7AB /* LabelDefault.swift */,
 				799BC8DC2823464A0000E7AB /* TextFieldDefault.swift */,
+				799BC8DE28234AB50000E7AB /* ButtonDefault.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -318,6 +321,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7931AF5828209A2500D70F36 /* LoginView.swift in Sources */,
+				799BC8DF28234AB50000E7AB /* ButtonDefault.swift in Sources */,
 				7931AF512820956500D70F36 /* Coordinator.swift in Sources */,
 				7931AF53282095FB00D70F36 /* LoginCoordinator.swift in Sources */,
 				7931AF1E28208E0B00D70F36 /* AppDelegate.swift in Sources */,

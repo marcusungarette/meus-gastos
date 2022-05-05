@@ -28,6 +28,5 @@ class LabelDefaut: UILabel {
         self.translatesAutoresizingMaskIntoConstraints = false
         self.text = text
         self.font = font
-        
     }
 }
