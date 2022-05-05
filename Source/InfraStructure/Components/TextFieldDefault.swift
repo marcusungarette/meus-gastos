@@ -9,7 +9,11 @@ import Foundation
 import UIKit
 
 class TextFieldDefaut: UITextField {
+    //MARK: Constant
+    let padding = UIEdgeInsets(top: 0, left: 15, bottom: 0, right: 15)
     
+    
+    //MARK: Inits
     init(placeholder: String) {
         super.init(frame: .zero)
         initDefault(placeholder: placeholder)
@@ -25,5 +29,19 @@ class TextFieldDefaut: UITextField {
         self.layer.borderWidth = 1
         self.backgroundColor = .lightGray
         self.placeholder = placeholder
+    }
+    
+    //MARK: Add Padding in TextField
+    
+    override open func textRect(forBounds bounds: CGRect) -> CGRect {
+        return bounds.inset(by: padding)
+    }
+    
+    override open func placeholderRect(forBounds bounds: CGRect) -> CGRect {
+        return bounds.inset(by: padding)
+    }
+    
+    override open func editingRect(forBounds bounds: CGRect) -> CGRect {
+        return bounds.inset(by: padding)
     }
 }

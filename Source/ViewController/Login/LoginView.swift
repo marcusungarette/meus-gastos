@@ -10,7 +10,6 @@ import UIKit
 
 
 class LoginView: UIView {
-    // MARK: Visual Elements
     
     // MARK: LabelDefault
     let titleLabel = LabelDefaut(text: "Login", font: UIFont.systemFont(ofSize: 25, weight: .semibold))
