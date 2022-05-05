@@ -10,12 +10,7 @@ import UIKit
 
 class LabelDefaut: UILabel {
     
-    init(text: String) {
-        super.init(frame: .zero)
-        initDefault(text: text, font: UIFont.systemFont(ofSize: 17, weight: .regular))
-    }
-    
-    init(text: String, font: UIFont) {
+    init(text: String, font: UIFont = .systemFont(ofSize: 17, weight: .regular)) {
         super.init(frame: .zero)
         initDefault(text: text, font: font)
     }
